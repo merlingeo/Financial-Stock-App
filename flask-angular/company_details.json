@@ -1,0 +1,795 @@
+[{
+	"III": {
+		"code": "III",
+		"name": "3i Group plc",
+		"marketcap": 12355.41,
+		"ISIN": "GB00B1YW4409",
+		"admitdate": "18 July 1994",
+		"subsectors": "Asset Managers and Custodians"
+	},
+	"ABDN": {
+		"code": "ABDN",
+		"name": "abrdn plc",
+		"marketcap": 3591.51,
+		"ISIN": "GB00BF8Q6K64",
+		"admitdate": "10 July 2006",
+		"subsectors": "Asset Managers and Custodians"
+	},
+	"ADM": {
+		"code": "ADM",
+		"name": "ADMIRAL GROUP PLC",
+		"marketcap": 6672.63,
+		"ISIN": "GB00B02J6398",
+		"admitdate": "28 September 2004",
+		"subsectors": "Property and Casualty Insurance"
+	},
+	"AAF": {
+		"code": "AAF",
+		"name": "AIRTEL AFRICA PLC",
+		"marketcap": 5156.18,
+		"ISIN": "GB00BKDRYJ47",
+		"admitdate": "28 June 2019",
+		"subsectors": "Telecommunications Services"
+	},
+	"AAL": {
+		"code": "AAL",
+		"name": "ANGLO AMERICAN PLC",
+		"marketcap": 39371.61,
+		"ISIN": "GB00B1XZS820",
+		"admitdate": "24 May 1999",
+		"subsectors": "General Mining"
+	},
+	"ANTO": {
+		"code": "ANTO",
+		"name": "ANTOFAGASTA PLC ",
+		"marketcap": 11455.65,
+		"ISIN": "GB0000456144",
+		"admitdate": "08 March 2004",
+		"subsectors": "Copper"
+	},
+	"AHT": {
+		"code": "AHT",
+		"name": "ASHTEAD GROUP PLC",
+		"marketcap": 19082.77,
+		"ISIN": "GB0000536739",
+		"admitdate": "19 September 2005",
+		"subsectors": "Commercial Vehicle-Equipment Leasing"
+	},
+	"ABF": {
+		"code": "ABF",
+		"name": "ASSOCIATED BRITISH FOODS PLC",
+		"marketcap": 12358.03,
+		"ISIN": "GB0006731235",
+		"admitdate": "01 August 1994",
+		"subsectors": "Food Products"
+	},
+	"AZN": {
+		"code": "AZN",
+		"name": "ASTRAZENECA PLC",
+		"marketcap": 173511.82,
+		"ISIN": "GB0009895292",
+		"admitdate": "01 June 1993",
+		"subsectors": "Pharmaceuticals"
+	},
+	"AUTO": {
+		"code": "AUTO",
+		"name": "AUTO TRADER GROUP PLC",
+		"marketcap": 6222.85,
+		"ISIN": "GB00BVYVFW23",
+		"admitdate": "24 March 2015",
+		"subsectors": "Consumer Digital Services"
+	},
+	"AVST": {
+		"code": "AVST",
+		"name": "AVAST PLC",
+		"marketcap": 7253.99,
+		"ISIN": "GB00BDD85M81",
+		"admitdate": "10 May 2018",
+		"subsectors": "Software"
+	},
+	"AVV": {
+		"code": "AVV",
+		"name": "AVEVA GROUP PLC",
+		"marketcap": 6616.76,
+		"ISIN": "GB00BBG9VN75",
+		"admitdate": "05 December 1996",
+		"subsectors": "Software"
+	},
+	"AV": {
+		"code": "AV",
+		"name": "AVIVA PLC",
+		"marketcap": 12018.25,
+		"ISIN": "GB00BPQY8M80",
+		"admitdate": "04 June 1990",
+		"subsectors": "Life Insurance"
+	},
+	"BME": {
+		"code": "BME",
+		"name": "B&M EUROPEAN VALUE RETAIL S.A.",
+		"marketcap": 3971.87,
+		"ISIN": "LU1072616219",
+		"admitdate": "17 June 2014",
+		"subsectors": "Diversified Retailers"
+	},
+	"BA": {
+		"code": "BA",
+		"name": "BAE SYSTEMS PLC",
+		"marketcap": 25002.41,
+		"ISIN": "GB0002634946",
+		"admitdate": "11 February 1981",
+		"subsectors": "Defense"
+	},
+	"BARC": {
+		"code": "BARC",
+		"name": "BARCLAYS PLC",
+		"marketcap": 26405.04,
+		"ISIN": "GB0031348658",
+		"admitdate": "24 March 2015",
+		"subsectors": "Banks"
+	},
+	"BDEV": {
+		"code": "BDEV",
+		"name": "BARRATT DEVELOPMENTS PLC",
+		"marketcap": 4534.04,
+		"ISIN": "GB0000811801",
+		"admitdate": "29 November 1968",
+		"subsectors": "Home Construction"
+	},
+	"BKG": {
+		"code": "BKG",
+		"name": "BERKELEY GROUP HOLDINGS (THE) PLC",
+		"marketcap": 4204.06,
+		"ISIN": "GB00BLJNXL82",
+		"admitdate": "16 December 1985",
+		"subsectors": "Home Construction"
+	},
+	"BP": {
+		"code": "BP",
+		"name": "BP PLC",
+		"marketcap": 86736.57,
+		"ISIN": "GB0007980591",
+		"admitdate": "29 March 1954",
+		"subsectors": "Integrated Oil and Gas"
+	},
+	"BATS": {
+		"code": "BATS",
+		"name": "BRITISH AMERICAN TOBACCO PLC",
+		"marketcap": 77060.23,
+		"ISIN": "GB0002875804",
+		"admitdate": "29 January 1962",
+		"subsectors": "Tobacco"
+	},
+	"BLND": {
+		"code": "BLND",
+		"name": "BRITISH LAND CO PLC",
+		"marketcap": 4142.77,
+		"ISIN": "GB0001367019",
+		"admitdate": "20 March 1951",
+		"subsectors": "Diversified REITs"
+	},
+	"BT-A": {
+		"code": "BT-A",
+		"name": "BT Group plc",
+		"marketcap": 15597.83,
+		"ISIN": "GB0030913577",
+		"admitdate": "03 December 1984",
+		"subsectors": "Telecommunications Services"
+	},
+	"BNZL": {
+		"code": "BNZL",
+		"name": "BUNZL PLC",
+		"marketcap": 10305.71,
+		"ISIN": "GB00B0744B38",
+		"admitdate": "20 June 1957",
+		"subsectors": "Diversified Industrials"
+	},
+	"BRBY": {
+		"code": "BRBY",
+		"name": "BURBERRY GROUP PLC",
+		"marketcap": 7006.50,
+		"ISIN": "GB0031743007",
+		"admitdate": "18 July 2002",
+		"subsectors": "Clothing and Accessories"
+	},
+	"CNA": {
+		"code": "CNA",
+		"name": "CENTRICA PLC",
+		"marketcap": 4982.48,
+		"ISIN": "GB00B033F229",
+		"admitdate": "17 February 1997",
+		"subsectors": "Multi-Utilities"
+	},
+	"CCH": {
+		"code": "CCH",
+		"name": "Coca-Cola HBC AG",
+		"marketcap": 7420.05,
+		"ISIN": "CH0198251305",
+		"admitdate": "29 April 2013",
+		"subsectors": "Soft Drinks"
+	},
+	"CPG": {
+		"code": "CPG",
+		"name": "COMPASS GROUP PLC",
+		"marketcap": 33603.36,
+		"ISIN": "GB00BD6K4575",
+		"admitdate": "02 February 2001",
+		"subsectors": "Vending and Catering Service"
+	},
+	"CRH": {
+		"code": "CRH",
+		"name": "CRH PLC",
+		"marketcap": 24163.24,
+		"ISIN": "IE0001827041",
+		"admitdate": "02 February 1973",
+		"subsectors": "Cement"
+	},
+	"CRDA": {
+		"code": "CRDA",
+		"name": "CRODA INTERNATIONAL PLC",
+		"marketcap": 9662.77,
+		"ISIN": "GB00BJFFLV09",
+		"admitdate": "10 June 1964",
+		"subsectors": "Chemicals: Diversified"
+	},
+	"DCC": {
+		"code": "DCC",
+		"name": "DCC PLC ",
+		"marketcap": 5096.57,
+		"ISIN": "IE0002424939",
+		"admitdate": "19 May 1994",
+		"subsectors": "Industrial Suppliers"
+	},
+	"DPH": {
+		"code": "DPH",
+		"name": "DECHRA PHARMACEUTICALS PLC",
+		"marketcap": 3888.45,
+		"ISIN": "GB0009633180",
+		"admitdate": "21 September 2000",
+		"subsectors": "Pharmaceuticals"
+	},
+	"DGE": {
+		"code": "DGE",
+		"name": "DIAGEO PLC",
+		"marketcap": 88244.53,
+		"ISIN": "GB0002374006",
+		"admitdate": "01 April 1952",
+		"subsectors": "Distillers and Vintners"
+	},
+	"EDV": {
+		"code": "EDV",
+		"name": "ENDEAVOUR MINING PLC",
+		"marketcap": 4481.54,
+		"ISIN": "GB00BL6K5J42",
+		"admitdate": "14 June 2021",
+		"subsectors": "Gold Mining"
+	},
+	"EXPN": {
+		"code": "EXPN",
+		"name": "EXPERIAN PLC ",
+		"marketcap": 25712.12,
+		"ISIN": "GB00B19NLV48",
+		"admitdate": "11 October 2006",
+		"subsectors": "Professional Business Support Services"
+	},
+	"FLTR": {
+		"code": "FLTR",
+		"name": "FLUTTER ENTERTAINMENT PLC",
+		"marketcap": 19077.88,
+		"ISIN": "IE00BWT6H894",
+		"admitdate": "07 December 2000",
+		"subsectors": "Casinos and Gambling"
+	},
+	"FRES": {
+		"code": "FRES",
+		"name": "FRESNILLO PLC",
+		"marketcap": 5317.42,
+		"ISIN": "GB00B2QPKJ12",
+		"admitdate": "14 May 2008",
+		"subsectors": "Gold Mining"
+	},
+	"GLEN": {
+		"code": "GLEN",
+		"name": "GLENCORE PLC",
+		"marketcap": 66032.26,
+		"ISIN": "JE00B4T3BW64",
+		"admitdate": "24 May 2011",
+		"subsectors": "General Mining"
+	},
+	"GSK": {
+		"code": "GSK",
+		"name": "GSK PLC",
+		"marketcap": 57048.70,
+		"ISIN": "GB00BN7SWP63",
+		"admitdate": "22 May 1972",
+		"subsectors": "Pharmaceuticals"
+	},
+	"HLN": {
+		"code": "HLN",
+		"name": "HALEON PLC",
+		"marketcap": 24730.19,
+		"ISIN": "GB00BMX86B70",
+		"admitdate": "18 July 2022",
+		"subsectors": "Pharmaceuticals"
+	},
+	"HLMA": {
+		"code": "HLMA",
+		"name": "HALMA PLC",
+		"marketcap": 8219.32,
+		"ISIN": "GB0004052071",
+		"admitdate": "18 January 1972",
+		"subsectors": "Electronic Equipment: Gauges and Meters"
+	},
+	"HL": {
+		"code": "HL",
+		"name": "HARGREAVES LANSDOWN PLC ",
+		"marketcap": 4266.02,
+		"ISIN": "GB00B1VZ0M25",
+		"admitdate": "18 May 2007",
+		"subsectors": "Asset Managers and Custodians"
+	},
+	"HIK": {
+		"code": "HIK",
+		"name": "HIKMA PHARMACEUTICALS PLC",
+		"marketcap": 3004.71,
+		"ISIN": "GB0009633180",
+		"admitdate": "04 November 2005",
+		"subsectors": "Pharmaceuticals"
+	},
+	"HWDN": {
+		"code": "HWDN",
+		"name": "HOWDEN JOINERY GROUP PLC",
+		"marketcap": 3345.21,
+		"ISIN": "GB0005576813",
+		"admitdate": "01 April 1972",
+		"subsectors": "Home Improvement Retailers"
+	},
+	"HSBA": {
+		"code": "HSBA",
+		"name": "HSBC HLDGS PLC",
+		"marketcap": 106090.00,
+		"ISIN": "GB0005405286",
+		"admitdate": "08 April 1991",
+		"subsectors": "Banks"
+	},
+	"IMB": {
+		"code": "IMB",
+		"name": "IMPERIAL BRANDS PLC",
+		"marketcap": 17938.95,
+		"ISIN": "GB0004544929",
+		"admitdate": "01 October 1996",
+		"subsectors": "Tobacco"
+	},
+	"INF": {
+		"code": "INF",
+		"name": "INFORMA PLC",
+		"marketcap": 7830.35,
+		"ISIN": "GB00BMJ6DW54",
+		"admitdate": "30 June 2009",
+		"subsectors": "Media Agencies"
+	},
+	"IHG": {
+		"code": "IHG",
+		"name": "INTERCONTINENTAL HOTELS GROUP PLC",
+		"marketcap": 9084.89,
+		"ISIN": "GB00BHJYC057",
+		"admitdate": "27 June 2005",
+		"subsectors": "Hotels and Motels"
+	},
+	"ICP": {
+		"code": "ICP",
+		"name": "INTERMEDIATE CAPITAL GROUP PLC",
+		"marketcap": 4109.86,
+		"ISIN": "GB00BYT1DJ19",
+		"admitdate": "01 June 1994",
+		"subsectors": "Asset Managers and Custodians"
+	},
+	"ITRK": {
+		"code": "ITRK",
+		"name": "INTERTEK GROUP PLC",
+		"marketcap": 6710.73,
+		"ISIN": "GB0031638363",
+		"admitdate": "29 May 2002",
+		"subsectors": "Professional Business Support Services"
+	},
+	"IAG": {
+		"code": "IAG",
+		"name": "INTERNATIONAL CONSOLIDATED AIRLINES GROUP S.A.",
+		"marketcap": 9084.89,
+		"ISIN": "ES0177542018",
+		"admitdate": "24 January 2011",
+		"subsectors": "Airlines"
+	},
+	"JD": {
+		"code": "JD",
+		"name": "JD SPORTS FASHION PLC",
+		"marketcap": 6016.97,
+		"ISIN": "GB00BM8Q5M07",
+		"admitdate": "22 October 1996",
+		"subsectors": "Apparel Retailers"
+	},
+	"KGF": {
+		"code": "KGF",
+		"name": "KINGFISHER PLC",
+		"marketcap": 4615.64,
+		"ISIN": "GB0033195214",
+		"admitdate": "24 November 1982",
+		"subsectors": "Home Improvement Retailers"
+	},
+	"LAND":{
+		"code": "LAND",
+		"name" :"LAND SECURITIES GROUP PLC",
+		"marketcap":4825.68,
+		"ISIN":"GB00BYW0PQ60",
+		"admitdate" : "02 August 1955",
+		"subsectors" : "Diversified REITs"
+	  },
+	  "LGEN":{
+		"code": "LGEN",
+		"name" :"LEGAL & GENERAL GROUP PLC",
+		"marketcap":15260.27,
+		"ISIN":"GB0005603997",
+		"admitdate" : "02 July 1979",
+		"subsectors" : "Life Insurance"
+	  },
+	  "LLOY":{
+		"code": "LLOY",
+		"name" :"LLOYDS BANKING GROUP PLC",
+		"marketcap":29832.75,
+		"ISIN":"GB0008706128",
+		"admitdate" : "08 October 1986",
+		"subsectors" : "Banks"
+	  },
+	  "LSEG":{
+		"code": "LSEG",
+		"name" :"LONDON STOCK EXCHANGE GROUP PLC",
+		"marketcap":41871.10,
+		"ISIN":"GB00B0SWJX34",
+		"admitdate" : "20 July 2001",
+		"subsectors" : "Financial Data Providers"
+	  },
+	  "MNG":{
+		"code": "MNG",
+		"name" :"M&G PLC",
+		"marketcap":4937.02,
+		"ISIN":"GB00BKFB1C65",
+		"admitdate" : "21 October 2019",
+		"subsectors" : "Asset Managers and Custodians"
+	  },
+	  "MGGT":{
+		"code": "MGGT",
+		"name" :"MEGGITT PLC",
+		"marketcap":6247.44,
+		"ISIN":"GB0005758098",
+		"admitdate" : "28 April 1947",
+		"subsectors" : "Aerospace"
+	  },
+	  "MRO":{
+		"code": "MRO",
+		"name" :"MELROSE INDUSTRIES PLC",
+		"marketcap":5649.84,
+		"ISIN":"GB00BNR5MZ78",
+		"admitdate" : "31 August 2016",
+		"subsectors" : "Diversified Industrials"
+	  },
+	  "MNDI":{
+		"code": "MNDI",
+		"name" :"MONDI PLC",
+		"marketcap":7089.09,
+		"ISIN":"GB00B1CRLC47",
+		"admitdate" : "03 July 2007",
+		"subsectors" : "Containers and Packaging"
+	  },
+	  "NG":{
+		"code": "NG",
+		"name" :"NATIONAL GRID PLC",
+		"marketcap":41633.27,
+		"ISIN":"GB00BDR05C01",
+		"admitdate" : "31 January 2002",
+		"subsectors" : "Multi-Utilities"
+	  },
+	  "NXT":{
+		"code": "NXT",
+		"name" :"NEXT PLC",
+		"marketcap":7409.38,
+		"ISIN":"GB0032089863",
+		"admitdate" : "25 November 2002",
+		"subsectors" : "Diversified Retailers"
+	  },
+	  "OCDO":{
+		"code": "OCDO",
+		"name" :"OCADO GROUP PLC",
+		"marketcap":6031.34,
+		"ISIN":"GB00B3MBS747",
+		"admitdate" : "26 July 2010",
+		"subsectors" : "Food Retailers and Wholesalers"
+	  },
+	  "PSON":{
+		"code": "PSON",
+		"name" :"PEARSON PLC",
+		"marketcap":6376.92,
+		"ISIN":"GB0006776081",
+		"admitdate" : "13 August 1969",
+		"subsectors" : "Publishing"
+	  },
+	  "PSH":{
+		"code": "PSH",
+		"name" :"PERSHING SQUARE HOLDINGS LTD ORD NPV",
+		"marketcap":5393.34,
+		"ISIN":"GG00BPFJTF46",
+		"admitdate" : "02 May 2017",
+		"subsectors" : "Closed End Investments"
+	  },
+	  "PSN":{
+		"code": "PSN",
+		"name" :"PERSIMMON PLC",
+		"marketcap":4781.78,
+		"ISIN":"GB0006825383",
+		"admitdate" : "29 April 1985",
+		"subsectors" : "Home Construction"
+	  },
+	  "PHNX":{
+		"code": "PHNX",
+		"name" :"PHOENIX GROUP HOLDINGS PLC",
+		"marketcap":6002.22,
+		"ISIN":"GB00BGXQNP29",
+		"admitdate" : "13 December 2018",
+		"subsectors" : "Life Insurance"
+	  },
+	  "RKT":{
+		"code": "RKT",
+		"name" :"PRUDENTIAL PLC",
+		"marketcap":47086.08,
+		"ISIN":"GB00B24CGK77",
+		"admitdate" : "23 October 2007",
+		"subsectors" : "Nondurable Household Products"
+	  },
+	  "REL":{
+		"code": "REL",
+		"name" :"RELX PLC",
+		"marketcap":44217.46,
+		"ISIN":"GB00B2B0DG97",
+		"admitdate" : "21 April 1948",
+		"subsectors" : "Publishing"
+	  },
+	  "RTO":{
+		"code": "RTO",
+		"name" :"RENTOKIL INITIAL PLC",
+		"marketcap":9934.23,
+		"ISIN":"GB00B082RF11",
+		"admitdate" : "21 June 2005",
+		"subsectors" : "Professional Business Support Services"
+	  },
+	  "RMV":{
+		"code": "RMV",
+		"name" :"RIGHTMOVE PLC",
+		"marketcap":5019.90,
+		"ISIN":"GB00BGDT3G23",
+		"admitdate" : "15 March 2006",
+		"subsectors" : "Real Estate Services"
+	  },
+	  "RIO":{
+		"code": "RIO",
+		"name" :"RIO TINTO PLC",
+		"marketcap":62219.24,
+		"ISIN":"GB0007188757",
+		"admitdate" : "01 November 1973",
+		"subsectors" : "General Mining"
+	  },
+	  "RR":{
+		"code": "RR",
+		"name" :"ROLLS-ROYCE HOLDINGS PLC",
+		"marketcap":6566.89,
+		"ISIN":"GB00B63H8491",
+		"admitdate" : "20 May 1987",
+		"subsectors" : "Aerospace"
+	  },
+	  "RS1":{
+		"code": "RS1",
+		"name" :"RS GROUP PLC",
+		"marketcap":5179.68,
+		"ISIN":"GB0003096442",
+		"admitdate" : "01 June 1967",
+		"subsectors" : "Industrial Suppliers"
+	  },
+	  "SGE":{
+		"code": "SGE",
+		"name" :"SAGE GROUP PLC",
+		"marketcap":7392.37,
+		"ISIN":"GB00B8C3BL03",
+		"admitdate" : "10 June 2013",
+		"subsectors" : "Software"
+	  },
+	  "SBRY":{
+		"code": "SBRY",
+		"name" :"SAINSBURY(J) PLC",
+		"marketcap":4751.55,
+		"ISIN":"GB00B019KW72",
+		"admitdate" : "11 July 1975",
+		"subsectors" : "Food Retailers and Wholesalers"
+	  },
+	  "SDR":{
+		"code": "SDR",
+		"name" :"SCHRODERS PLC",
+		"marketcap":6152.33,
+		"ISIN":"GB0002405495",
+		"admitdate" : "30 September 1959",
+		"subsectors" : "Asset Managers and Custodians"
+	  },
+	  "SMT":{
+		"code": "SMT",
+		"name" :"SCOTTISH MORTGAGE INV TST PLC",
+		"marketcap":11953.73,
+		"ISIN":"GB00BLDYK618",
+		"admitdate" : "27 June 1986",
+		"subsectors" : "Closed End Investments"
+	  },
+	  "SGRO":{
+		"code": "SGRO",
+		"name" :"SEGRO PLC",
+		"marketcap":11687.11,
+		"ISIN":"GB00B5ZN1N88",
+		"admitdate" : "01 December 1949",
+		"subsectors" : "Industrial REITs"
+	  },
+	  "SVT":{
+		"code": "SVT",
+		"name" :"SEVERN TRENT PLC",
+		"marketcap":7166.63,
+		"ISIN":"GB00B1FH8J72",
+		"admitdate" : "12 December 1989",
+		"subsectors" : "Water"
+	  },
+	  "SHEL":{
+		"code": "SHEL",
+		"name" :"SHELL PLC",
+		"marketcap":169960.02,
+		"ISIN":"GB00BP6MXD84",
+		"admitdate" : "20 July 2005",
+		"subsectors" : "Integrated Oil and Gas"
+	  },
+	  "SN":{
+		"code": "SN",
+		"name" :"SMITH & NEPHEW PLC",
+		"marketcap":8775.73,
+		"ISIN":"GB0009223206",
+		"admitdate" : "23 February 1937",
+		"subsectors" : "Medical Equipment"
+	  },
+	  "SMDS":{
+		"code": "SMDS",
+		"name" :"SMITH (DS) PLC",
+		"marketcap":3588.45,
+		"ISIN":"GB0008220112",
+		"admitdate" : "02 July 2012",
+		"subsectors" : "Containers and Packaging"
+	  },
+	  "SMIN":{
+		"code": "SMIN",
+		"name" :"SMITHS GROUP PLC",
+		"marketcap":5473.09,
+		"ISIN":"GB00B1WY2338",
+		"admitdate" : "20 December 1950",
+		"subsectors" : "Diversified Industrials"
+	  },
+	  "SKG":{
+		"code": "SKG",
+		"name" :"SMURFIT KAPPA GROUP PLC",
+		"marketcap":7291.07,
+		"ISIN":"IE00B1RR8406",
+		"admitdate" : "20 March 2007",
+		"subsectors" : "Containers and Packaging"
+	  },
+	  "SPX":{
+		"code": "SPX",
+		"name" :"SPIRAX-SARCO ENGINEERING PLC",
+		"marketcap":7817.62,
+		"ISIN":"GB00BWFGQN14",
+		"admitdate" : "03 June 2013",
+		"subsectors" : "Machinery: Industrial"
+	  },
+	  "SSE":{
+		"code": "SSE",
+		"name" :"SSE PLC",
+		"marketcap":19245.07,
+		"ISIN":"GB0007908733",
+		"admitdate" : "18 June 1991",
+		"subsectors" : "Conventional Electricity"
+	  },
+	  "STJ":{
+		"code": "STJ",
+		"name" :"ST.JAMES'S PLACE PLC",
+		"marketcap":6123.54,
+		"ISIN":"GB0007908733",
+		"admitdate" : "27 August 1996",
+		"subsectors" : "Asset Managers and Custodians"
+	  },
+	  "STAN":{
+		"code": "STAN",
+		"name" :"STANDARD CHARTERED PLC",
+		"marketcap":17368.19,
+		"ISIN":"GB0004082847",
+		"admitdate" : "02 February 1970",
+		"subsectors" : "Banks"
+	  },
+	  "TW":{
+		"code": "TW",
+		"name" :"STANDARD CHARTERED PLC",
+		"marketcap":3867.52,
+		"ISIN":"GB0008782301",
+		"admitdate" : "07 March 1947",
+		"subsectors" : "Home Construction"
+	  },
+	  "TSCO":{
+		"code": "TSCO",
+		"name" :"TESCO PLC ",
+		"marketcap":18897.97,
+		"ISIN":"GB00BLGZ9862",
+		"admitdate" : "23 December 1947",
+		"subsectors" : "Food Retailers and Wholesalers"
+	  },
+	  "ULVR":{
+		"code": "ULVR",
+		"name" :"UNILEVER PLC",
+		"marketcap":100158.49,
+		"ISIN":"GB00B10RZP78",
+		"admitdate" : "11 August 1939",
+		"subsectors" : "Personal Products"
+	  },
+	  "UTG":{
+		"code": "UTG",
+		"name" :"UNITE GROUP PLC",
+		"marketcap":4257.11,
+		"ISIN":"GB0006928617",
+		"admitdate" : "11 April 2000",
+		"subsectors" : "Residential REITs"
+	  },
+	  "UU":{
+		"code": "UU",
+		"name" :"UNITED UTILITIES GROUP PLC",
+		"marketcap":7405.31,
+		"ISIN":"GB00B39J2M42",
+		"admitdate" : "28 July 2008",
+		"subsectors" : "Water"
+	  },
+	  "VOD":{
+		"code": "VOD",
+		"name" :"VODAFONE GROUP PLC",
+		"marketcap":32020.28,
+		"ISIN":"GB00BH4HKS39",
+		"admitdate" : "26 October 1988",
+		"subsectors" : "Water"
+	  },
+	  "WTB":{
+		"code": "WTB",
+		"name" :"WHITBREAD PLC",
+		"marketcap":5064.76,
+		"ISIN":"GB00B1KJJ408",
+		"admitdate" : "09 July 1948",
+		"subsectors" : "Hotels and Motels"
+	  },
+	  	"WPP":{
+		"code": "WPP",
+		"name" :"WPP PLC",
+		"marketcap":8120.66,
+		"ISIN":"JE00B8KF9B49",
+		"admitdate" : "19 November 2008",
+		"subsectors" : "Media Agencies"
+	  },
+     "ENT":{
+    "code": "ENT",
+    "name" :"ENTAIN PLC",
+    "marketcap":7339.17,
+    "ISIN":"IM00B5VQMV65",
+    "admitdate" : "20 March 2013",
+    "subsectors" : "Casinos and Gambling"
+  },
+       "PRU":{
+    "code": "PRU",
+    "name" :"PRUDENTIAL PLC",
+    "marketcap":25156.23,
+    "ISIN":"GB0007099541",
+    "admitdate" : "29 December 1978",
+    "subsectors" : "Life Insurance"
+  }
+
+}]
