@@ -1,0 +1,34 @@
+<div class="profile-wrapper">
+    <div class="profile-side-nav">
+        <div class="namewrapper">
+
+        
+        <div class="name-space">
+            <div><mat-icon matSuffix><span class="material-symbols-outlined">account_circle</span></mat-icon></div>
+                <div class="name" >{{usr_name}} <br> {{usr_email}}</div>
+        </div>
+
+    </div>
+        <div class="tab-components flex-style">
+            <div *ngFor="let item of nav_selected">
+            <a  routerLink={{item.link}}><span ><mat-icon matSuffix><span class="material-symbols-outlined">{{item.icon}}</span></mat-icon>
+            {{item.name}}</span></a>
+            <!-- <span><mat-icon matSuffix><span class="material-symbols-outlined">notifications</span></mat-icon>Notifications</span>
+            <span><mat-icon matSuffix><span class="material-symbols-outlined">message</span></mat-icon>Expert Advice</span> -->
+            </div>
+            <a ><span (click)="sideNavLogOut()"><mat-icon aria-hidden="false">login</mat-icon>LogOut</span></a>
+            
+        </div>
+
+        <div class="settings">
+            <a routerLink='settings'><span><mat-icon matSuffix><span class="material-symbols-outlined">settings</span></mat-icon>Settings</span></a>
+        </div>
+    </div>
+    <div class="profile-main-content">
+        <!-- <p>main-main</p> -->
+        <!-- <app-user-profile></app-user-profile> -->
+        <!-- <app-adminpage></app-adminpage> -->
+        <!-- <app-user-profile></app-user-profile> -->
+        <router-outlet></router-outlet>
+    </div>
+</div>

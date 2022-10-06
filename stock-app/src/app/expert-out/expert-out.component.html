@@ -1,0 +1,39 @@
+
+
+
+<div class="notif-wrapper">
+    <div class="inner-wrapper">
+
+        <div *ngFor="let item of repliesList;index as i">
+                <mat-card>
+                <div>
+                    <div class="parent-reply-class">
+                        <div class="child-reply">
+                            <div>
+                                <span>user###### :</span><br>
+                                <span> {{dateformatChange(item.msgdate)}}</span>
+                                
+                            </div>
+                            <div style="width: 60%">
+                                {{item.message}}
+                            </div>
+                        </div>
+                        <mat-divider></mat-divider>
+                        <div class="child-reply">
+                            <div>
+                                <span>reply###### :</span><br>
+                                <span> {{dateformatChange(item.replydate)}}</span>
+                            </div>
+                            <div style="width: 60%;color: brown;">
+
+                                <span>{{item.reply}}</span><br>
+                                <span style="font-style: italic;color: gray;">rating :{{item.rating}}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </mat-card>
+            <br>
+            </div>
+    </div>
+</div>

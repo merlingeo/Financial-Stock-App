@@ -1,0 +1,54 @@
+
+.login-wrapper{
+    display: flex;
+    flex-direction: row;    
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;               
+    top: 50%;                        
+    transform: translate(0, -50%);
+
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+
+    // .dispaly-content{
+       
+    //     width: 50%;
+    // }
+
+    .inner-container{
+        margin-left: auto;
+        margin-right: auto;
+        width: 20rem;
+    }
+}
+
+mat-card{
+    height: fit-content;
+   
+    mat-form-field{
+        width: 100%;
+    }
+    
+}
+
+.mat-button, .mat-raised-button{
+    background-color:#2F4F7F;
+} 
+
+.submitbtn{
+   
+    margin: auto;
+    width: 100%;
+}
+
+p{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 25px;
+text-align: justify;
+}
+

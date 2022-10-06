@@ -1,0 +1,28 @@
+.notif-wrapper{
+    width: 100%;
+
+    .inner-wrapper{
+        margin: 28px;
+
+        span{
+            color: white;
+            font-size: large;
+            font-weight: 500;
+            padding: 20px;
+        }
+        .main-main-div{
+            padding: 56px 0;
+        }
+        .main-div{
+            display: flex;
+            // padding: 0px 10px;
+            width: 100%;
+        }
+        .sub-div{
+            width: 18%;
+           padding: 10px;
+            text-align: justify;
+  text-justify: inter-word;
+        }
+    }
+}

@@ -1,0 +1,39 @@
+<div class="app-wrapper">
+
+  <div class="app-navbar mat-elevation-z6">
+    <div class="span-tile" >
+    <span class="span-tile logo"><a routerLink="/"> <img src="../assets/logo.jpg" height="45px" alt="logo"></a></span>
+    <span class="span-tile " style="padding: 0 10px;"><a routerLink="/ftse100">FTSE 100</a></span>
+  </div>
+    <div class="login-reg-help">
+      <ng-container *ngIf="!isLoggedIn">
+        <span class="span-tile"><button mat-raised-button color="primary"
+            routerLink="/register">Register</button></span>
+        <span class="span-tile"><button mat-raised-button color="primary" routerLink="/login">Login</button></span>
+
+      </ng-container>
+      <ng-container *ngIf="isLoggedIn">
+        <span class="span-tile" routerLink="/profile">
+
+          <div class="name-tile"><mat-icon [inline]="true"><div class="material-symbols-outlined">account_circle</div></mat-icon>
+        <div class="name-space" >Hi {{ user_name}}</div></div>
+        </span>
+        <span class="span-tile"><button mat-raised-button color="primary" (click)="logOut()">Logout</button></span>
+      </ng-container>
+      <span class="span-tile"><button mat-flat-button color="accent" routerLink="help">Help</button></span>
+      <!-- (click)="routeHelp()" -->
+    </div>
+
+  </div>
+
+  <div class="app-body">
+
+    <div *ngIf="router.url == '/'">
+      <app-homepage></app-homepage>
+    </div>
+
+    <router-outlet></router-outlet>
+
+
+
+  </div>

@@ -1,0 +1,76 @@
+
+ 
+ .search-bar{
+     height: 150px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ 
+     .item{
+         width: 50%;
+     }
+    .mat-form-field{
+     width: 100%;
+    }
+     
+ }      
+ 
+ .stock-category{
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-evenly;
+ 
+     .stock-card{
+         margin: 10px;
+         width: fit-content;
+     }
+ }
+
+//  .field-class{
+//     // padding-bottom: 0 !important;
+//     background-color: WHITE !important;
+//         box-shadow: inset 0 0 5px;
+//  }
+    
+.mat-form-field-appearance-fill .mat-form-field-flex {
+    background-color: WHITE !important;
+            box-shadow: inset 0 0 5px !important;
+}
+
+
+.stock-icon-low{
+    // vertical-align: middle;/
+    color: red; 
+    mat-icon{
+        transform: rotate(90deg);
+        color: red; 
+        text-shadow: 0 1px 1px red; 
+        vertical-align: middle;
+        height: 30px;
+        width: 30px;
+        font-size: 30px;
+    }
+}
+
+.stock-icon-high{
+    // vertical-align: middle;
+    color: green; 
+    mat-icon{
+        transform: rotate(-90deg);  
+        color: green;
+        text-shadow: 0 1px 1px green;
+        vertical-align: middle;
+        height: 30px;
+        width: 30px;
+        font-size: 30px;
+    }
+}
+
+::ng-deep .mat-list-item-content {
+    justify-content: space-between !important;
+  }
+
+.card-title{
+    margin: auto;
+    text-align: center;
+  }

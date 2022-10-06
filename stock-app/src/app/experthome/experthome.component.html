@@ -1,0 +1,51 @@
+<div class="notif-wrapper">
+    <div class="inner-wrapper">
+    
+        <mat-card *ngIf="isNoMessage">You don't have any Messages.</mat-card>
+        <mat-card *ngIf="!isNoMessage">
+            <div>Messages to be Replied:</div>
+            <br>
+            <!-- <mat-list *ngFor="let item of unansweredList">
+                <mat-divider></mat-divider>
+                <mat-list-item>
+                    <div><div>anonymous user</div><div>{{dateformatChange(item.msgdate)}}</div></div>
+                    <div style="background: whitesmoke;">{{item.message| slice:0:30}}....</div>
+                <div><button mat-raised-button>Respond to the Message</button></div>
+            </mat-list-item>
+
+                
+              </mat-list> -->
+              <mat-accordion>
+                <mat-expansion-panel hideToggle *ngFor="let item of unansweredList;index as i">
+                  <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        <div>{{dateformatChange(item.msgdate)}}</div>
+                        
+                    </mat-panel-title>
+                    <mat-panel-description>
+                        <div> {{item.message| slice:0:60}}...</div>
+                        <!-- <p>Respond to the Message</p>   -->
+                    </mat-panel-description>
+                    <mat-panel-description >--- click to respond ---</mat-panel-description>
+                  </mat-expansion-panel-header>
+                  <!-- <div >{{replyForm.value.reply}}</div> -->
+                  <div>
+                    <form [formGroup]="replyForm" (ngSubmit)="onSubmit(item.msgid,i)">
+                        <p>Question:</p>
+                        <br>
+                        <div> {{item.message}}</div>
+                        <br>
+                        <mat-form-field appearance="outline">
+                            <mat-label>Type in your Answer here....</mat-label>
+                            <textarea matInput formControlName="reply"></textarea>
+                        </mat-form-field>
+    
+                        <button mat-raised-button color="accent" type="submit"> Submit</button>
+                    </form>
+    
+                </div>
+                </mat-expansion-panel>
+                </mat-accordion>
+        </mat-card>
+    </div>
+    </div>

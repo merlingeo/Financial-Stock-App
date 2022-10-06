@@ -1,0 +1,82 @@
+.exp-wrapper{
+    width: 100%;
+
+    .inner-wrapper{
+        margin: 28px;
+    }
+
+    .mat-form-field{
+        width: 100%;
+    }
+
+    textarea{
+        height: 120px;
+    }
+
+    .chat-msg{
+        width: 90%;
+        margin: auto;
+       
+        
+
+        .chat-section{
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 10px;
+            
+            // :nth-child(odd) {
+            //     background-color: bisque;
+            //     }
+            // div:nth-child(3) {
+                
+            //         // mat-card{
+
+            //             // flex-direction: row-reverse;
+            //                 background-color: burlywood;
+
+            //         // }
+            //     // }
+            //   }
+        }
+
+    }
+    ::ng-deep .mat-list-item-content {
+        padding: 0 !important;
+      }
+
+    .mat-card .mat-divider-horizontal{
+        position: relative;
+    }
+    .mat-list-base .mat-list-item{
+        height: auto;
+        
+    }
+
+    .msg-wrapper{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        
+        :nth-child(odd) {
+        float: right;
+      }
+      
+
+
+    }
+
+    .msg-card{
+        width: 60%;
+        mat-card{
+            width: 100%;
+            background-color: whitesmoke;
+           
+        }
+        
+    }
+    .headings{
+        font-weight: 200;
+        font-size: larger;
+    }
+}
+

@@ -1,0 +1,41 @@
+<div class="set-wrapper">
+    <div class="inner-wrapper">
+    
+        <mat-card>
+            <form class="settings-container" [formGroup]="pwdForm" (ngSubmit)="onSubmit()">
+                <div class="outer-cont" style="display: flex;">
+                <div class="inner-cont">
+                    <br>
+                    <label style="font-weight: 500;" for="">--- CHANGE PASSWORD ---</label>
+                    <br>
+                    <mat-form-field appearance="outline">
+                        <mat-label>Old Password</mat-label>
+                        <input matInput type="password" formControlName="oldpassword">
+                    </mat-form-field>
+                    <mat-form-field appearance="outline">
+                        <mat-label>New Password</mat-label>
+                        <input matInput type="password" formControlName="password">
+                        <!-- <mat-error *ngIf="pwdForm.errors?.['NoChangeinPass'] && (pwdForm.controls['oldpassword'].touched && pwdForm.controls['password'].touched || pwdForm.controls['password'].dirty)" class="error-message"> Old and New passwords cannot be same!</mat-error> -->
+                    </mat-form-field>
+                    <div *ngIf="pwdForm.errors?.['NoChangeinPass'] && (pwdForm.controls['password'].touched || pwdForm.controls['password'].dirty)" class="error-message">
+                        Old and New passwords cannot be same!
+                    </div>
+                    <mat-form-field appearance="outline">
+                        <mat-label>Confirm New Password</mat-label>
+                        <input matInput type="password" formControlName="confirmpassword">
+                        <!-- <mat-error *ngIf="pwdForm.errors?.['passwordsNotMatch'] && (pwdForm.controls['confirmpassword'].touched || pwdForm.controls['confirmpassword'].dirty)" class="error-message"> Passwords Does not Match!</mat-error> -->
+                    </mat-form-field>
+                    <div *ngIf="pwdForm.errors?.['passwordsNotMatch'] && (pwdForm.controls['confirmpassword'].touched || pwdForm.controls['confirmpassword'].dirty)" class="error-message">
+                        Passwords Does not Match!
+                    </div>
+                    <button mat-raised-button color="accent" class="submitbtn" [disabled]="!!pwdForm.errors?.['passwordsNotMatch'] || !!pwdForm.errors?.['NoChangeinPass'] || pwdForm.invalid"> Submit</button>
+                </div>
+                <div  *ngIf="!!ispassUpdated" class="message" style="margin: auto;color: red;" >
+                    <span>{{ispassUpdated}}</span>
+                </div>
+            </div>
+            </form>
+        </mat-card>
+    </div>
+    </div>
+    

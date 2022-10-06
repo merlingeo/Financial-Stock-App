@@ -1,0 +1,29 @@
+.notif-wrapper{
+    width: 100%;
+
+    .inner-wrapper{
+        margin: 28px;
+
+        .mat-form-field{
+            width: 100%;
+        }
+    
+        textarea{
+            height: 100px;
+        }
+
+        .parent-reply-class{
+            display: flex;
+            flex-direction: column;
+        }
+        .child-reply{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+        .mat-card .mat-divider-horizontal{
+            position: relative;
+        }
+    }
+
+}

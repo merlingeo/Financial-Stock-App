@@ -1,0 +1,48 @@
+.mat-elevation-z8{
+    margin: 28px;
+    // background-color: rgba(0,0,0,0.3);
+    cursor: pointer
+}
+
+table{
+    width: 100%;
+}
+
+.loading-indicator {
+    position: fixed;
+    z-index: 999;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+
+  
+  .stock-icon-low{
+    // vertical-align: middle;/
+    color: red; 
+    mat-icon{
+        transform: rotate(90deg);
+        color: red; 
+        text-shadow: 0 1px 1px red; 
+        vertical-align: middle;
+        height: 30px;
+        width: 30px;
+        font-size: 30px;
+    }
+}
+
+.stock-icon-high{
+    // vertical-align: middle;
+    color: green; 
+    mat-icon{
+        transform: rotate(-90deg);  
+        color: green;
+        text-shadow: 0 1px 1px green;
+        vertical-align: middle;
+        height: 30px;
+        width: 30px;
+        font-size: 30px;
+    }
+}

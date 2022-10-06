@@ -1,0 +1,45 @@
+.register-wrapper{
+    // display: flex;
+    // flex-direction: row;    
+    // justify-content: space-evenly;
+    // align-items: center;
+    position: absolute;               
+    top: 50%;                     
+    transform: translate(0, -50%);
+
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+
+}
+
+.register-container{
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.reg-content{
+    display: flex;
+    flex-grow: inherit;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-around;
+    align-items: baseline;
+    flex-direction: row;
+}
+
+
+mat-card{
+    width: 60%;
+}
+
+.mat-button, .mat-raised-button{
+    background-color:#2F4F7F;
+} 
+
+.error-message{
+    margin-top: -20px;
+    font-size: 12px;
+    color: red;
+}

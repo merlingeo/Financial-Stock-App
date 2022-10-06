@@ -1,0 +1,54 @@
+<div class="user-wrapper">
+    <div class="example-loading-shade" *ngIf="!isDataLoaded ">
+
+
+        <mat-progress-spinner *ngIf="!isDataLoaded" class="loading-indicator" mode="indeterminate">
+        </mat-progress-spinner>
+    </div>
+    <div class="inner-wrapper">
+
+        <mat-card *ngIf="isDataLoaded && !displayNOlist">
+
+
+            <mat-list role="list">
+                <!-- *ngFor="let shoe of typesOfShoes" [value]="shoe" -->
+                <div class="fav-list list-header">
+                    <div class="col-head">Ticker</div>
+                    <div class="col-head">Name</div>
+                    <div class="col-head">Change</div>
+                    <div class="col-head">Open</div>
+                    <div class="col-head">Close</div>
+                    <div class="col-head">
+
+                        <!-- <img src="../../assets/fall.svg" alt="dsdg"> -->
+
+                    </div>
+                    <div class="col-head">Remove </div>
+                </div>
+                <mat-list-item role="listitem" *ngFor="let item of displayDailyData;index as i">
+                    <div class="fav-list">
+                        <div class="col-head">{{item.Ticker| slice:0:-2}}</div>
+                        <div class="col-head"><span style=" font-size: small;">{{item.Name}}</span></div>
+                        <div class="col-head"  [ngClass]="favPercents[i][item.Ticker] <0  ? 'stock-icon-low': 'stock-icon-high'">
+                            {{item.Percent |number : '1.2-2'}} %</div>
+                        <div class="col-head">{{item.Open | number : '1.2-2'}}</div>
+                        <div class="col-head">{{item.Close| number : '1.2-2'}}</div>
+                        <div class="col-head">
+                            <span *ngIf="item.Percent <0" > <img src="../../assets/fall.svg" ></span>
+                                <span *ngIf="item.Percent >0"> <img src="../../assets/rise.svg" ></span>
+
+
+                        </div>
+                        <div class="col-head">
+                            <mat-icon (click)="removeFavoriteStock(i,item.Ticker)">remove_circle</mat-icon>
+                        </div>
+
+                    </div>
+                </mat-list-item>
+            </mat-list>
+        </mat-card>
+        <mat-card *ngIf="displayNOlist">You Don't have any favourite Stocks!</mat-card>
+    </div>
+
+
+</div>

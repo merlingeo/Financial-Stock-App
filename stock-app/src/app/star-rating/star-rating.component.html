@@ -1,0 +1,23 @@
+<div class="star-flex">
+
+  
+    <div>
+      <button
+        mat-icon-button
+        [color]="color"
+        *ngFor="let ratingId of ratingArr; index as i"
+        [id]="'star_' + i"
+        (click)="onClick(i + 1)" >
+        <mat-icon>
+          {{ showIcon(i) }}
+        </mat-icon>
+      </button>
+    </div>
+
+    <div class="body-2">
+      <span class="body-2">{{ rating }}</span> /
+        <span class="body-2">{{ starCount }}</span>
+     
+    </div>
+  </div>
+

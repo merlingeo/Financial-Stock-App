@@ -1,0 +1,83 @@
+<div class="search-bar">
+  <div class="item">
+    <mat-form-field class="field-class" appearance="fill">
+      <mat-label>Search Ticker...</mat-label>
+      <input matInput #ticker>
+      <mat-icon matSuffix (click)="searchTicker(ticker.value)"><span class="material-symbols-outlined">
+          search
+        </span></mat-icon>
+    </mat-form-field>
+  </div>
+</div>
+<div class="stock-category">
+  <div class="stock-card">
+    <mat-card>
+      <mat-card-title class="card-title">Top Gainers</mat-card-title>
+      <mat-list>
+        <div *ngFor="let ele of gainerData" (click)="routeToTicker(ele.percent_code)">
+          <mat-list-item>
+            <div>{{ele.percent_code}}</div>
+            <div [ngClass]="ele.percent_val <0  ? 'stock-icon-low': 'stock-icon-high'">
+              <span style="vertical-align: middle;">
+                <mat-icon>play_arrow</mat-icon>
+              </span>
+              <span style="padding-left: 4px;">( {{ele.percent_val |number : '1.2-2' }}% )</span>
+            </div>
+
+          </mat-list-item>
+          <mat-divider></mat-divider>
+        </div>
+        <div class="more">...</div>
+        <!-- <mat-list-item>... more</mat-list-item> -->
+      </mat-list>
+    </mat-card>
+  </div>
+  <div class="stock-card">
+    <mat-card>
+      <mat-card-title class="card-title">Top Losers</mat-card-title>
+      <mat-list>
+        <div *ngFor="let ele of loserData"  (click)="routeToTicker(ele.percent_code)">
+          <mat-list-item>
+            <div>{{ele.percent_code}}</div>
+            <div [ngClass]="ele.percent_val <0  ? 'stock-icon-low': 'stock-icon-high'">
+              <span style="vertical-align: middle;">
+                <mat-icon>play_arrow</mat-icon>
+              </span>
+              <span style="padding-left: 4px;">( {{ele.percent_val |number : '1.2-2' }}% )</span>
+            </div>
+
+          </mat-list-item>
+          <mat-divider></mat-divider>
+        </div>
+        <div class="more">...</div>
+        <!-- <mat-list-item>... more</mat-list-item> -->
+      </mat-list>
+    </mat-card>
+  </div>
+
+
+  <div class="stock-card" *ngFor="let element of industryData; let i = index">
+    <mat-card>
+      <mat-card-title class="card-title">{{industryHeading[i]}}</mat-card-title>
+      <mat-list>
+        <div *ngFor="let ele of element.slice(0, 5)"  (click)="routeToTicker(ele.code)">
+          <mat-list-item>
+            <div>{{ele.code}}</div>
+            <div [ngClass]="ele.daily <0  ? 'stock-icon-low': 'stock-icon-high'">
+              <span style="vertical-align: middle;">
+                <mat-icon>play_arrow</mat-icon>
+              </span>
+              <span style="padding-left: 4px;">( {{ele.daily |number : '1.2-2' }}% )</span>
+            </div>
+
+          </mat-list-item>
+          <mat-divider></mat-divider>
+        </div>
+        <div class="more">...</div>
+        <!-- <mat-list-item>... more</mat-list-item> -->
+      </mat-list>
+    </mat-card>
+  </div>
+
+  <!-- <app-ftsepage style="width: 100%;"> </app-ftsepage> -->
+</div>

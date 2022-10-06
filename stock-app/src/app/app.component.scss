@@ -1,0 +1,92 @@
+//box-shadow: 0 3px 5px -1px #0003, 0 6px 10px #00000024, 0 1px 18px #0000001f;
+
+html, body,.app-wrapper {
+    margin:0px;
+    height:100%;
+    height:100vh;
+    background: rgb(53,34,195);
+    background: linear-gradient(0deg, rgba(53,34,195,0.49064837116487214) 0%, rgba(250,221,170,1) 97%);
+  }
+
+.mat-elevation-z6{
+    box-shadow: 0 3px 5px -1px #0003, 0 6px 10px #00000024, 0 1px 18px #0000001f; 
+}
+
+.app-wrapper {
+    position: relative;
+}
+   
+    .app-navbar {
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        position: absolute;
+        height: 60px;
+        display: flex;
+        background: rgb(255, 255, 255);
+        justify-content: space-between;
+
+        .login-reg-help{
+            align-self: center;  
+            justify-content:space-around;
+            padding: 0 10px;
+            display: flex;
+
+            button{
+                margin: 10px;
+            }
+        }
+       
+    }
+    .span-tile{
+        align-self: center;  
+        display: inline-block;
+        vertical-align: middle;
+
+        a{
+            text-decoration: none !important;
+        }
+  
+    }
+    
+    .logo{
+        height: 45px;
+        padding: 0 10px;
+    }
+
+.app-body{
+    position: relative;
+    top: 60px;
+    height: 90vh;
+    overflow: auto;
+
+    }
+
+
+    .mat-button, .mat-raised-button{
+        background-color:#2F4F7F;
+        color: white;
+    } 
+
+    .name-tile{
+        display: flex;
+        align-items: center;
+        align-content: center;
+        padding: 0 10px;
+    mat-icon{
+        vertical-align: middle;
+        color: lightgray;
+        
+        font-size: 36px;
+        
+    }
+
+    .name-space{
+        padding: 0 5px;
+        font-weight: 400;
+        font-size: large;
+        cursor: pointer
+    }
+    
+    }

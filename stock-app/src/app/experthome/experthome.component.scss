@@ -1,0 +1,16 @@
+.notif-wrapper{
+    width: 100%;
+
+    .inner-wrapper{
+        margin: 28px;
+
+        .mat-form-field{
+            width: 100%;
+        }
+    
+        textarea{
+            height: 100px;
+        }
+    }
+
+}

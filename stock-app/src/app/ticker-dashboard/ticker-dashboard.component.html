@@ -1,0 +1,157 @@
+<div class="example-container ">
+    <div class="example-loading-shade" *ngIf="isLoadingResults || isRateLimitReached">
+
+
+        <mat-progress-spinner *ngIf="isLoadingResults" class="loading-indicator" mode="indeterminate">
+        </mat-progress-spinner>
+    </div>
+    <!-- <div class="center">
+        <div class="overlay">
+            <div class="center">
+                <mat-progress-spinner diameter=50 
+                                      mode="indeterminate" 
+                                      color="accent">
+                </mat-progress-spinner> 
+            </div>
+            </div> -->
+    <div class="ticker-wrapper" *ngIf="!isLoadingResults">
+
+        <div class="inner-wrapper">
+            <div class="stock-head">
+                <mat-card class="stock-heading-matcard">
+                    <div class="card-head">
+                        <div class="head-name"><span>{{stockINFO[0].name}}</span>
+                            <span [ngClass]="stockINFO[0].percentvalue <0  ? 'stock-icon-low': 'stock-icon-high'">
+                                <span style="    padding-left: 4px;">( {{stockINFO[0].percentvalue |number : '1.2-2' }}%
+                                    )</span>
+                                <span style="vertical-align: middle;">
+                                    <mat-icon>play_arrow</mat-icon>
+                                </span>
+                            </span>
+                        </div>
+                        <div><button mat-raised-button color="accent">
+                                <mat-icon>library_add</mat-icon><span (click)="addtofavourites()"></span>
+                            </button></div>
+                        <div class="head-code">{{stockINFO[0].code}}</div>
+                    </div>
+                    <div>
+                        <br>
+                        <!-- <span>Definition : </span> -->
+                        <span style="color: grey">{{stockINFO[0].definition}}</span>
+                    </div>
+                </mat-card>
+            </div>
+            <div class="top-card">
+                <!-- <div *ngFor="let item of stockDaily ; index as i"> -->
+                <mat-card>
+                    <div class="daily-card">
+                        <div class="daily-num">{{dailyObj.High | number : '1.2-2'}}</div>
+                        <div class="daily-name">High</div>
+                    </div>
+                </mat-card>
+                <!-- </div> -->
+                <mat-card>
+                    <div class="daily-card">
+                        <div class="daily-num">{{dailyObj.Low | number : '1.2-2'}}</div>
+                        <div class="daily-name">Low</div>
+                    </div>
+                </mat-card>
+                <mat-card>
+                    <div class="daily-card">
+                        <div class="daily-num">{{dailyObj.Open | number : '1.2-2'}}</div>
+                        <div class="daily-name">Open</div>
+                    </div>
+                </mat-card>
+                <mat-card>
+                    <div class="daily-card">
+                        <div class="daily-num">{{dailyObj.Close | number : '1.2-2'}}</div>
+                        <div class="daily-name">Close</div>
+                    </div>
+                </mat-card>
+                <mat-card>
+                    <div class="daily-card">
+                        <div class="daily-num">{{dailyObj.Volume | number}}</div>
+                        <div class="daily-name">Volume</div>
+                    </div>
+                </mat-card>
+                <mat-card>
+                    <div class="daily-card">
+                        <div class="daily-num">{{dailyObj.AdjClose | number : '1.2-2'}}</div>
+                        <div class="daily-name">Adj. Close</div>
+                    </div>
+                </mat-card>
+
+            </div>
+
+            <div class="stock-body" *ngIf="!isLoadingResults">
+                <mat-card class="stock-heading-matcard">
+                    <div class="stockinfo">
+                        <div class="inner-info">
+                            <div>
+                                <span class="heading">Market Cap : </span>
+                                <span>{{stockINFO[0].marketcap}} million</span>
+                            </div>
+                            <div>
+                                <span class="heading">Industry : </span>
+                                <span>{{stockINFO[0].industry}}</span>
+                            </div>
+                            <div>
+                                <span class="heading">Super Sector : </span>
+                                <span>{{stockINFO[0].supersector}}</span>
+                            </div>
+                        </div>
+                        <div class="inner-info">
+
+                            <div>
+                                <span class="heading">Sector : </span>
+                                <span>{{stockINFO[0].sector}}</span>
+                            </div>
+                            <div>
+                                <span class="heading">Sub Sector : </span>
+                                <span>{{stockINFO[0].subsectors}}</span>
+                            </div>
+                        </div>
+                        <div class="inner-info">
+
+                            <div>
+                                <span class="heading">ISIN : </span>
+                                <span>{{stockINFO[0].ISIN}}</span>
+                            </div>
+                            <div>
+                                <span class="heading">Country of Origin : </span>
+                                <span>{{stockINFO[0].ISIN | slice:0:2}}</span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <app-plotly [ticker]="stockINFO[0].code"></app-plotly>
+                    <!-- <link href="C:/Users/merli/OneDrive/Documents/StockApp_workspace/file.html" rel="import" /> -->
+                    <!-- <iframe src="C:/Users/merli/OneDrive/Documents/StockApp_workspace/file.html"></iframe> -->
+                    <!-- <div style="padding: 10px;" w3-include-html="C:/Users/merli/OneDrive/Documents/StockApp_workspace/file.html"></div> -->
+
+                    <div *ngIf="!!newsData" style="padding: 60px 0;">
+                        <div style="padding: 0 16px"><h2>News and Article</h2></div>
+                        <div *ngFor="let item of newsData" class="newsdiv">
+                            <div class="img-url">
+                                <img src={{item.image_url}} alt="news-image">
+                            </div>
+                            <div class="news-data">
+                                <div class="news-heading">
+                                  <a href={{item.news_url}}> {{item.title}}</a> 
+                                </div>
+                                <div class="news-body">
+                                    {{item.text | slice:0:150}}...
+                                </div>
+                                <div class="news-source">
+                                    <span> {{item.source_name}} | </span>
+                                    <span> {{item.date | date}}</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </mat-card>
+            </div>
+        </div>
+
+    </div>

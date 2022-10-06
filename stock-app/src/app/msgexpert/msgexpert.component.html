@@ -1,0 +1,81 @@
+<div class="exp-wrapper">
+    <div class="inner-wrapper">
+
+        <mat-card style="margin-bottom: 16px;">
+            <!-- <div> Asdfsdgd is Online! </div> -->
+            <br>
+            <!-- <br> -->
+            <div class="chat-msg">
+                <span  *ngIf="!no_msgs" class="headings">Previous Conversations</span>
+                <mat-list>
+                    
+                    <div class="chat-section" *ngFor="let items of conversations; index as i">
+                        <mat-divider></mat-divider>
+                        <mat-list-item>
+                            <div class="msg-wrapper">
+                                <div>
+                                    {{items.user_name}} <br>{{items.msgdate | date }}
+                                </div>
+                                <div class="msg-card">
+                                    <mat-card >
+                                        {{items.message}}
+                                         <span *ngIf="!items.isUser">
+                                            <br><app-star-rating [rating]="items.rating"  [starCount]="starCount" [color]="starColor" (ratingUpdated)="onRatingChanged($event,items.msgid,i)"></app-star-rating></span>
+                                    </mat-card>
+
+                                </div>
+                            </div>
+                        </mat-list-item>
+                    </div>
+
+                </mat-list>
+            </div>
+            <br>
+            <span class="headings">Type in your queries below.</span>
+            <br>
+            <br>
+            <div>
+                <form [formGroup]="queryForm" (ngSubmit)="onSubmit()">
+
+
+                    <mat-form-field appearance="outline">
+                        <mat-label>Type in your Query here....</mat-label>
+                        <textarea matInput formControlName="text"></textarea>
+                    </mat-form-field>
+
+                    <button mat-raised-button color="accent" type="submit"> Submit</button>
+                </form>
+
+            </div>
+        </mat-card>
+        <!-- {{queryForm.value | json}} -->
+        <!-- <mat-accordion class="example-headers-align" multi>
+                <mat-expansion-panel>
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            Create a Query
+                        </mat-panel-title>
+                        <mat-panel-description>
+                            Leave your Queries with the expert
+                        </mat-panel-description>
+                    </mat-expansion-panel-header>
+
+                    
+
+                </mat-expansion-panel>
+
+                <mat-expansion-panel>
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                           Message Inbox
+                        </mat-panel-title>
+                        <mat-panel-description>
+                            View the previous messages and replies
+                        </mat-panel-description>
+                    </mat-expansion-panel-header>
+                    You don't have any messages!
+                </mat-expansion-panel>
+            </mat-accordion> -->
+
+    </div>
+</div>

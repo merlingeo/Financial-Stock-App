@@ -1,0 +1,79 @@
+<div class="register-wrapper">
+    <div class="register-container">
+        <mat-card>
+            <br>
+            <h2>Welcome to FIN ASSIST . REGISTER HERE!</h2>
+            <br>
+            <form class="reg-content" [formGroup]="registerForm" (ngSubmit)="onRegisterSubmit()">
+                <div>
+                    <mat-form-field appearance="outline">
+                        <mat-label>Full Name</mat-label>
+                        <input matInput type="text" formControlName="name">
+                    </mat-form-field>
+                    <div *ngIf="registerForm.get('name').errors?.required && (registerForm.controls['name'].touched || registerForm.controls['name'].dirty)"
+                        class="error-message">
+                        Name Required
+                    </div>
+                </div>
+                
+                <div>
+                    <mat-form-field appearance="outline">
+                        <mat-label>Email</mat-label>
+                        <input matInput type="email" formControlName="email">
+                    </mat-form-field>
+                    <div *ngIf="registerForm.get('email').errors?.required && (registerForm.controls['email'].touched || registerForm.controls['email'].dirty)"
+                        class="error-message">
+                        Email Required
+                    </div>
+                    <div *ngIf="registerForm.get('email').errors?.email && (registerForm.controls['email'].touched || registerForm.controls['email'].dirty)"
+                        class="error-message">
+                        Enter a vaild email address
+                    </div>
+
+                </div>
+                <div>
+                    <mat-form-field appearance="outline">
+                        <mat-label>Date of Birth</mat-label>
+                        <input matInput [matDatepicker]="picker" formControlName="dob"  [max]="maxDate">
+                        <mat-hint>MM/DD/YYYY</mat-hint>
+                        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                        <mat-datepicker #picker ></mat-datepicker>
+                    </mat-form-field>
+                    <div *ngIf="registerForm.get('dob').errors?.required && (registerForm.controls['dob'].touched || registerForm.controls['dob'].dirty)"
+                        class="error-message">
+                        DOB Required
+                    </div>
+                </div>
+                <div>
+                    <mat-form-field appearance="outline">
+                        <mat-label>Address</mat-label>
+                        <input matInput type="text" formControlName="address">
+                    </mat-form-field>
+                    <div *ngIf="registerForm.get('dob').errors?.required && (registerForm.controls['dob'].touched || registerForm.controls['dob'].dirty)"
+                        class="error-message">
+                        Address Required
+                    </div>
+                </div>
+
+                <mat-form-field appearance="outline">
+                    <mat-label>Password</mat-label>
+                    <input matInput type="password" formControlName="password">
+                </mat-form-field>
+                <div>
+                    <mat-form-field appearance="outline">
+                        <mat-label>Confirm Password</mat-label>
+                        <input matInput type="password" formControlName="confirmpassword">
+                    </mat-form-field>
+                    <div *ngIf="registerForm.errors?.['passwordsNotMatch'] && (registerForm.controls['confirmpassword'].touched || registerForm.controls['confirmpassword'].dirty)"
+                        class="error-message">
+                        Passwords Does not Match!
+                    </div>
+                </div>
+
+
+                <button mat-raised-button color="accent" class="submitbtn">Register</button>
+            </form>
+            <br>
+        </mat-card>
+    </div>
+</div>
