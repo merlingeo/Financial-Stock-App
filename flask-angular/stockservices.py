@@ -224,7 +224,7 @@ def gainerLosers():
        abort(e) 
 
 
-
+# the stock news API is referenced from https://stocknewsapi.com
 def getstocknews(ticker):
     
     news_api = 'https://stocknewsapi.com/api/v1?tickers='+ticker.lower()+'&items=50&page=1&token=onb2sezfnep0ygrpmza6qrbhjhrl0bydr15fylec'

@@ -1,5 +1,6 @@
 import datetime
 from email import message
+from dateutil import parser
 import email
 from functools import wraps
 from sqlalchemy import and_
@@ -142,6 +143,9 @@ def token_required(f):
 def stringtoDatefn(date_string):
     return dt.datetime.strptime(date_string, '%d %B %Y')
 
+def ISOdateStringChange(date_string):
+    return parser.isoparse(date_string)
+
 
 @app.route("/")
 # @app.before_request
@@ -251,7 +255,7 @@ def createuser():
    
 
     new_user = User(public_id = str(uuid.uuid4()),name= data['name'],emailid=data['email'], 
-    password= data['password'],dob=data['dob'],address = data['address'],admin = data['admin'])
+    password= data['password'],dob=ISOdateStringChange(data['dob']),address = data['address'],admin = data['admin'])
     try:
         db.session.add(new_user)
         db.session.commit()
@@ -354,6 +358,30 @@ def user_role_upgrade(current_user ,public_id):
         abort(e) 
 
 
+@app.route('/changepwd', methods=['PUT'])
+@token_required
+def user_psw_change(current_user):
+    data = request.get_json()
+    print("inside pass change") 
+
+    try :
+        user = User.query.filter_by(public_id=current_user.public_id,password = data['oldpassword']).first()
+
+        if not user:
+            return jsonify({'response' : 'The old password provided is incorrect.'},404)
+
+        user.password = data['password']
+        db.session.commit()
+        db.session.close()
+        return jsonify({'response' : ' User Password Updated'},200)
+
+    except Exception as e:
+        db.session.rollback()
+        abort(e) 
+
+
+
+
 @app.route('/user/<public_id>', methods=['DELETE'])
 @token_required
 def delete_user(current_user,public_id):
@@ -371,8 +399,18 @@ def delete_user(current_user,public_id):
             return jsonify({'response' : 'no user found'})
 
         db.session.delete(user)
+
+        mail.send_message(
+        'FIN ASSIST Account Removed',
+        sender='finassiststockapp@gmail.com',
+        recipients=[user.emailid],
+        body="Hi "+user.name +"\n You are no longer registered in the FIN ASSIST APP. ")
+        
         db.session.commit()
         db.session.close()
+
+       
+
         return jsonify({'response' : ' user deleted'})
 
     except Exception as e:
@@ -722,13 +760,37 @@ def reply_star_rating(current_user ):
         db.session.rollback()
         abort(e) 
 
+@app.route('/get-stars', methods=['GET'])
+# @token_required
+def get_rating():
+
+    try :
+        all_reply = Reply.query.all()
+
+        star_list =[]
+        for item in all_reply:
+            each_star={}
+            each_star['expertid']= item.expertid
+            each_star['rating']= item.rating
+            
+            star_list.append(each_star)
+     
+
+
+        db.session.close()
+        return jsonify({'response' : star_list})
+
+    except Exception as e:
+        db.session.close()
+        abort(e) 
+
 
 @app.route('/unanswered',methods=['GET'])
-@token_required
-def unAnsweredQstns(current_user):
+# @token_required
+def unAnsweredQstns():
 
-    if  current_user.admin != "11":
-        abort(403)
+    # if  current_user.admin != "11":
+    #     abort(403)
     try:
 
         msgs = Message.query.filter_by(isRepied =False).all()
@@ -740,7 +802,10 @@ def unAnsweredQstns(current_user):
             noreply_msg_op['message']= item.message
             noreply_msg_op['msgdate']=item.msgdate
             noreply_msg_op['isRepied']=item.isRepied
-            # noreply_msg_op['user_id']=item.userId
+
+            user = User.query.filter_by(public_id=item.userId).first()
+
+            noreply_msg_op['user_email']=item.userId
             noreply_msg_op['isUser']=item.isUser
             noreply_msg_op['rating']=''
 
